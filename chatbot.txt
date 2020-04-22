@@ -1,0 +1,214 @@
+A '''chatbot''' is a [[Software agent|software]] application used to conduct an on-line chat [[conversation]] via text or text-to-speech, in lieu of providing direct contact with a live human agent.<ref name="target">{{cite web|url=http://searchdomino.techtarget.com/sDefinition/0,,sid4_gci935566,00.html|title=What is a chatbot?|website=techtarget.com|accessdate=30 January 2017}}</ref>  Designed to convincingly simulate the way a human would behave as a conversational partner, chatbot systems typically require continuous tuning and testing, and many in production remain unable to adequately converse or pass the industry standard [[Turing test]].<ref name="chatbots and Turing Test">{{cite web|url=https://pdfs.semanticscholar.org/9447/1160f13e9771df3199b3684e085729110428.pdf|title=A Survey of Chabot Systems through a Loebner Prize Competition|author=Luka Bradeško, Dunja Mladenić|accessdate=28 June 2019}}</ref>  The term "ChatterBot" was originally coined by [[Michael Loren Mauldin|Michael Mauldin]] (creator of the first [[Verbot]]) in 1994 to describe these conversational programs.<ref>{{Harvnb|Mauldin|1994}}</ref> 
+
+Chatbots are typically used in [[dialog system]]s for various purposes including customer service, request routing, or for information gathering.  While some chatbot applications use extensive word-classification processes, [[natural language processing|Natural Language]] processors, and sophisticated [[Artificial intelligence|AI]], others simply scan for general keywords and generate responses using common phrases obtained from an associated library or [[database]].  
+
+Today, most chatbots are accessed on-line via website popups, or through [[virtual assistant (artificial intelligence)|virtual assistant]]s such as [[Google Assistant]], [[Amazon Alexa]], or [[messaging apps]] such as [[Facebook Messenger]] or [[WeChat]].<ref>{{cite web|url=https://gizmodo.com/google-assistant-is-a-mega-chatbot-that-wants-to-be-abs-1777351140|title=Google Assistant Is a Mega AI Bot That Wants To Be Absolutely Everywhere|first=Darren|last=Orf|publisher=}}</ref><ref>{{cite web|url=https://venturebeat.com/2016/12/21/8-top-chatbots-of-2016/|title=The 8 best chatbots of 2016|date=21 December 2016|publisher=}}</ref> Chatbots are typically classified into usage categories that include: [[conversational commerce|commerce]] ([[e-commerce]] via chat), [[education]], [[entertainment]], [[finance]], [[health]], [[news]], and [[productivity]].<ref>{{cite web|url=https://cai.tools.sap/blog/2017-messenger-bot-landscape/|title=2017 Messenger Bot Landscape, a Public Spreadsheet Gathering 1000+ Messenger Bots|date=3 May 2017|publisher=}}</ref>
+
+== Background ==
+In 1950, [[Alan Turing]]'s famous article "[[Computing Machinery and Intelligence]]" was published,<ref>{{Harv|Turing|1950}}</ref> which proposed what is now called the [[Turing test]] as a criterion of intelligence. This criterion depends on the ability of a [[computer program]] to impersonate a human in a real-time written conversation with a human judge to the extent that the judge is unable to distinguish reliably—on the basis of the conversational content alone—between the program and a real human. The notoriety of Turing's proposed test stimulated great interest in [[Joseph Weizenbaum]]'s program [[ELIZA]], published in 1966, which seemed to be able to fool users into believing that they were conversing with a real human. However Weizenbaum himself did not claim that ELIZA was genuinely intelligent, and the introduction to his paper presented it more as a debunking exercise:
+
+<blockquote>[In] artificial intelligence ... machines are made to behave in wondrous ways, often sufficient to dazzle even the most experienced observer. But once a particular program is unmasked, once its inner workings are explained ... its magic crumbles away; it stands revealed as a mere collection of procedures ... The observer says to himself "I could have written that". With that thought, he moves the program in question from the shelf marked "intelligent", to that reserved for curios ... The object of this paper is to cause just such a re-evaluation of the program about to be "explained". Few programs ever needed it more.<ref>{{Harv|Weizenbaum|1966|p=36}}</ref></blockquote>
+
+ELIZA's key method of operation (copied by chatbot designers ever since) involves the recognition of clue words or phrases in the input, and the output of corresponding pre-prepared or pre-programmed responses that can move the conversation forward in an apparently meaningful way (e.g. by responding to any input that contains the word 'MOTHER' with 'TELL ME MORE ABOUT YOUR FAMILY').<ref>{{Harv|Weizenbaum|1966|pp=44–5}}</ref> Thus an illusion of understanding is generated, even though the processing involved has been merely superficial. ELIZA showed that such an illusion is surprisingly easy to generate because human judges are so ready to give the benefit of the doubt when conversational responses are ''capable of being interpreted'' as "intelligent".
+
+Interface designers have come to appreciate that humans' readiness to interpret computer output as genuinely conversational—even when it is actually based on rather simple pattern-matching—can be exploited for useful purposes. Most people prefer to engage with programs that are human-like, and this gives chatbot-style techniques a potentially useful role in interactive systems that need to elicit information from users, as long as that information is relatively straightforward and falls into predictable categories. Thus, for example, online help systems can usefully employ chatbot techniques to identify the area of help that users require, potentially providing a "friendlier" interface than a more formal search or menu system. This sort of usage holds the prospect of moving chatbot technology from Weizenbaum's "shelf ... reserved for curios" to that marked "genuinely useful computational methods".
+
+==Development==
+Among the most notable early chatbots are [[ELIZA]] (1966) and [[PARRY]] (1972).<ref name="Güzeldere">{{Harvnb|GüzeldereFranchi|1995}}</ref><ref name="comphis">{{Harvnb|Computer History Museum|2006}}</ref><ref>{{Harvnb|Sondheim|1997}}</ref><ref>{{Harvnb|Network Working Group|1973}}—Transcript of a session between Parry and Eliza. (This is ''not'' the dialogue from the ICCC, which took place October 24–26, 1972, whereas this session is from September 18, 1972.)</ref> More recent notable programs include [[Artificial Linguistic Internet Computer Entity|A.L.I.C.E.]], [[Jabberwacky]] and D.U.D.E ([[Agence Nationale de la Recherche]] and [[CNRS]] 2006). While ELIZA and PARRY were used exclusively to simulate typed conversation, many chatbots now include other functional features, such as games and web searching abilities. In 1984, a book called ''The Policeman's Beard is Half Constructed'' was published, allegedly written by the chatbot [[Racter]] (though the program as released would not have been capable of doing so).<ref>[http://everything2.com/title/The+Policeman%2527s+Beard+is+Half+Constructed www.everything.com] 13 November 1999</ref>
+
+One pertinent field of AI research is [[natural language processing]]. Usually, [[Artificial general intelligence|weak AI]] fields employ specialized software or programming languages created specifically for the narrow function required. For example, A.L.I.C.E. uses a [[markup language]] called [[AIML]], which is specific to its function as a [[dialogue system|conversational agent]], and has since been adopted by various other developers of, so-called, [[Alicebot]]s. Nevertheless, A.L.I.C.E. is still purely based on [[pattern matching]] techniques without any reasoning capabilities, the same technique ELIZA was using back in 1966. This is not strong AI, which would require [[sapience]] and logical reasoning abilities.
+
+Jabberwacky learns new responses and context based on real-time user interactions, rather than being driven from a static database. Some more recent chatbots also combine real-time learning with [[evolutionary algorithm]]s that optimise their ability to communicate based on each conversation held. Still, there is currently no general purpose conversational artificial intelligence, and some software developers focus on the practical aspect, [[information retrieval]].
+
+Chatbot competitions focus on the Turing test or more specific goals. Two such annual contests are the [[Loebner Prize]] and The Chatterbox Challenge (the latter has been offline since 2015, however, materials can still be found from web archives).<ref>{{Cite web|url=http://www.schwaebische.de/archiv_artikel,-Chatroboter-simulieren-Menschen-_arid,855141.html|title=Chatroboter simulieren Menschen}}</ref>
+
+[[DBpedia]] created a chatbot during the GSoC of 2017.<ref>{{Cite web|url=https://chat.dbpedia.org/|title=DBpedia Chatbot|website=chat.dbpedia.org}}</ref><ref>{{Cite web|url=https://wiki.dbpedia.org/blog/meet-dbpedia-chatbot|title=Meet the DBpedia Chatbot &#124; DBpedia|website=wiki.dbpedia.org}}</ref><ref>{{Cite web|url=https://blog.dbpedia.org/2018/08/22/dbpedia-chatbot-2/|title=Meet the DBpedia Chatbot|date=August 22, 2018}}</ref> and can communicate through Facebook Messenger. DBpedia started in 2007 and allows to extract structured content from the [[Wikipedia]] dataset, along with many other datasets. DBpedia is currently one of the biggest representatives of [[Linked Open Data]] (LOD).<ref>{{cite book |last1=Lewoniewski |first1=Włodzimierz |date=2017-10-18 |title=Enrichment of Information in Multilingual Wikipedia Based on Quality Analysis |url=https://www.researchgate.net/publication/320448810 |journal=Lecture Notes in Business Information Processing |volume=303 |issue= |pages=216–227 |doi=10.1007/978-3-319-69023-0_19 |access-date=2018-05-05 |isbn=978-3-319-69022-3 }}</ref>
+
+==Application==
+{{See also|Virtual assistant}}
+[[File:Aeromexico_chatbot_on_Facebook_Messenger.jpg|thumb|right|[[Aeromexico]] airline chatbot running on [[Facebook Messenger]], March 2018]]
+
+===Messaging apps===
+Many companies' chatbots run on [[messaging apps]] or simply via SMS. They are used for [[B2C]] customer service, sales and marketing.<ref>{{cite book|last1=Beaver|first1=Laurie|title=The Chatbots Explainer|date=July 2016|publisher=BI Intelligence|url=https://www.businessinsider.com/chatbots-explained-why-businesses-should-be-paying-attention-to-the-chatbot-revolution-2016-7?IR=T}}</ref>
+
+In 2016, Facebook Messenger allowed developers to place chatbots on their platform. There were 30,000 bots created for Messenger in the first six months, rising to 100,000 by September 2017.<ref>{{Cite web|url=https://venturebeat.com/2017/04/18/facebook-messenger-hits-100000-bots/|title=Facebook Messenger Hits 100,000 bots|access-date=2017-09-22|date=2017-04-18}}</ref>
+
+Since September 2017, this has also been as part of a pilot program on WhatsApp. Airlines [[KLM]] and [[Aeroméxico]] both announced their participation in the testing;<ref name=tnooz>{{cite web|url=https://www.tnooz.com/article/klm-adds-whatsapp-platform/|title=KLM claims airline first with WhatsApp Business Platform|publisher=}}</ref><ref>{{cite web|url=https://www.forbes.com.mx/aeromexico-te-respondera-por-whatsapp-durante-2018/|title=Aeroméxico te atenderá por WhatsApp durante 2018|first=Forbes|last=Staff|date=26 October 2017|publisher=|accessdate=2 July 2018}}</ref><ref>{{cite news|url=https://www.huffingtonpost.com.mx/2017/10/27/podras-hacer-check-in-y-consultar-tu-vuelo-con-aeromexico-a-traves-de-whatsapp_a_23258181/|title=Podrás hacer 'check in' y consultar tu vuelo con Aeroméxico a través de WhatsApp|last=Redacción|date=27 October 2017|publisher=|accessdate=2 July 2018|newspaper=Huffington Post|archive-url=https://web.archive.org/web/20180310135702/https://www.huffingtonpost.com.mx/2017/10/27/podras-hacer-check-in-y-consultar-tu-vuelo-con-aeromexico-a-traves-de-whatsapp_a_23258181/|archive-date=10 March 2018|url-status=dead}}</ref><ref>{{cite web|url=https://blog.whatsapp.com/10000633/Building-for-People-and-Now-Businesses|title=Building for People, and Now Businesses|website=WhatsApp.com|accessdate=2 July 2018}}</ref> both airlines had previously launched customer services on the [[Facebook Messenger]] platform.
+
+The bots usually appear as one of the user's contacts, but can sometimes act as participants in a group chat.
+
+Many banks, insurers, media companies, e-commerce companies, airlines, hotel chains, retailers, health care providers, government entities and restaurant chains have used chatbots to answer simple questions, increase [[customer engagement]],<ref>{{cite blog|title=She is the company's most effective employee|work=Nordea News|url=https://translate.google.com/translate?sl=no&tl=en&js=y&prev=_t&hl=no&ie=UTF-8&u=https%3A%2F%2Fnordeanews.no%2F2017%2F09%2Fhun-er-bankens-mest-effektive-medarbeider%2F&edit-text=&act=url}}</ref> for promotion, and to offer additional ways to order from them.<ref>{{cite web|title=Better believe the bot boom is blowing up big for B2B, B2C businesses|url=https://venturebeat.com/2016/07/24/better-believe-the-bot-boom-is-blowing-up-big-for-b2b-b2c-businesses-vb-live/|website=VentureBeat|date=2016-07-24}}</ref><ref>{{Cite news|url=https://chatbotnewsdaily.com/chatbots-take-education-to-the-next-level-23bc02cdbccf|title=Chatbots Take Education To the Next Level – Chatbot News Daily|date=2016-09-29|work=Chatbot News Daily|access-date=2017-06-23}}</ref>
+
+A 2017 study showed 4% of companies used chatbots.<ref>{{cite web|url=https://www.pm360online.com/the-ai-revolution-is-underway/|title=The AI Revolution is Underway! – PM360|website=www.pm360online.com|accessdate=2 July 2018}}</ref> According to a 2016 study, 80% of businesses said they intended to have one by 2020.<ref>{{cite web|url=http://www.businessinsider.com/80-of-businesses-want-chatbots-by-2020-2016-12|title=80% of businesses want chatbots by 2020|publisher=|accessdate=2 July 2018}}</ref>
+
+====As part of company apps and websites====
+
+Previous generations of chatbots were present on company websites, e.g. Ask Jenn from [[Alaska Airlines]] which debuted in 2008<ref name="nytimes.com">{{cite web|url=https://www.nytimes.com/2008/03/04/business/04road.html|title=A Virtual Travel Agent With All the Answers|date=4 March 2008|website=The New York Times}}</ref> or Expedia's virtual customer service agent which launched in 2011.<ref name="nytimes.com"/><ref name=":0">{{cite web|url=http://www.hypergridbusiness.com/2011/10/chatbot-vendor-directory-released/|title=Chatbot vendor directory released –|website=www.hypergridbusiness.com}}</ref> The newer generation of chatbots includes IBM Watson-powered "Rocky", introduced in February 2017 by the [[New York City]]-based [[e-commerce]] company Rare Carat to provide information to prospective diamond buyers.<ref>{{cite news |date=February 15, 2017 |title=Rare Carat's Watson-powered chatbot will help you put a diamond ring on it |url=https://techcrunch.com/2017/02/15/rare-carats-watson-powered-chat-bot-will-help-you-put-a-diamond-ring-on-it/ |agency=TechCrunch }}</ref><ref>{{cite news |date=March 10, 2017 |title=10 ways you may have already used IBM Watson |url=https://venturebeat.com/2017/03/10/10-ways-you-may-have-already-used-ibm-watson/ |agency=VentureBeat }}</ref>
+
+====Chatbot sequences====
+Used by marketers to script sequences of messages, very similar to an Autoresponder sequence. Such sequences can be triggered by user opt-in or the use of keywords within user interactions. After a trigger occurs a sequence of messages is delivered until the next anticipated user response. Each user response is used in the decision tree to help the chatbot navigate the response sequences to deliver the correct response message.
+
+===Company internal platforms===
+Other companies explore ways they can use chatbots internally, for example for Customer Support, Human Resources, or even in [[Internet of Things|Internet-of-Things]] (IoT) projects. [[Overstock.com]], for one, has reportedly launched a chatbot named Mila to automate certain simple yet time-consuming processes when requesting for a sick leave.<ref>{{cite web|last1=Greenfield|first1=Rebecca|title=Chatbots Are Your Newest, Dumbest Co-Workers|url=https://www.bloomberg.com/news/articles/2016-05-05/chatbots-are-your-newest-dumbest-co-workers|website=Bloomberg}}</ref> Other large companies such as [[Lloyds Banking Group]], [[Royal Bank of Scotland]], [[Renault]] and [[Citroën]] are now using automated online assistants instead of [[call centres]] with humans to provide a first point of contact. A SaaS chatbot business ecosystem has been steadily growing since the [[Facebook F8|F8]] Conference when Facebook's [[Mark Zuckerberg]] unveiled that Messenger would allow chatbots into the app.<ref>{{cite web|url=https://venturebeat.com/2016/04/12/facebook-opens-its-messenger-platform-to-chatbots/|title=Facebook opens its Messenger platform to chatbots|date=12 April 2016|publisher=}}</ref> In large companies, like in hospitals and aviation organizations, IT architects are designing reference architectures for Intelligent Chatbots that are used to unlock and share knowledge and experience in the organization more efficiently, and reduce the errors in answers from expert service desks significantly.<ref>{{cite web|url=https://www.dragon1.com/watch/470340/chatbot-reference-architecture/|title=Chatbot Reference Architecture|date=1 January 2019|publisher=}}</ref> These Intelligent Chatbots make use of all kinds of artificial intelligence like image moderation and [[natural language understanding]] (NLU), [[natural language generation]] (NLG), machine learning and deep learning.
+
+===Customer Service===
+Many high-tech banking organizations are looking to integrate automated AI-based solutions such as chatbots into their customer service in order to provide faster and cheaper assistance to their clients who are becoming increasingly comfortable with technology.  In particular, chatbots can efficiently conduct a dialogue, usually replacing other communication tools such as email, phone, or [[SMS]]. In banking, their major application is related to quick customer service answering common requests, as well as transactional support.
+ 
+Several studies report significant reduction in the cost of customer services, expected to lead to billions of dollars of economic savings in the next 10 years.<ref name="WSBanks">{{cite web|url=https://www.marutitech.com/chatbots-transforming-wall-street-main-street-banks/|title=How Chatbots are Transforming Wall Street and Main Street Banks?|date=1 April 2019|publisher=}}</ref> In 2019, [[Gartner]] predicted that by 2021, 15% of all customer service interactions globally will be handled completely by AI.<ref>{{Cite web|url=https://www.gartner.com/smarterwithgartner/27297-2/|title=How to Manage Customer Service Technology Innovation|website=www.gartner.com|language=en-US|access-date=2020-01-02}}</ref>  A study by Juniper Research in 2019 estimates retail sales resulting from chatbot-based interactions will reach $112 billion by 2023.<ref>{{Cite web|url=https://www.juniperresearch.com/press/press-releases/chatbot-interactions-retail-reach-22-billion-2023|title=CHATBOT INTERACTIONS IN RETAIL TO REACH 22 BILLION BY 2023, AS AI OFFERS COMPELLING NEW ENGAGEMENT SOLUTIONS|website=www.juniperresearch.com|language=en-US|access-date=2020-01-02}}</ref>
+
+Since 2016 when [[Facebook]] allowed businesses to deliver automated customer support, e-commerce guidance, content and interactive experiences through chatbots, a large variety of chatbots were developed for the [[Facebook Messenger]] platform.<ref>{{cite web|url=https://techcrunch.com/2016/04/12/agents-on-messenger/|title=Facebook launches Messenger platform with chatbots|date=1 April 2019|publisher=}}</ref>
+ 
+In 2016, Russia-based Tochka Bank launched the world's first Facebook bot for a range of financial services, including a possibility of making payments.<ref>{{cite web|url=https://www.vedomosti.ru/technology/articles/2016/07/13/649035-rossiiskii-bank-zapustil-chatbota-v-facebook|title=Российский банк запустил чат-бота в Facebook|date=1 April 2019|publisher=}}</ref>
+
+In July 2016, [[ABSA Group Limited|Barclays Africa]] also launched a Facebook chatbot, making it the first bank to do so in Africa.<ref>{{cite web|url=https://www.fin24.com/Tech/Companies/absa-launches-world-first-facebook-messenger-banking-20160719|title=Absa launches 'world-first' Facebook Messenger banking|date=1 April 2019|publisher=}}</ref>
+ 
+The France's third largest bank by total assets<ref>{{cite web |url= http://www.relbanks.com/europe/france |title= The Biggest French Banks by Total Assets |website=Banks around the World |accessdate=April 1, 2019}}</ref> [[Société Générale]] launched their chatbot called SoBot in March 2018. While 80% of users of the SoBot expressed their satisfaction after having tested it, Société Générale deputy director Bertrand Cozzarolo stated that it will never replace the expertise provided by a human advisor. 
+<ref>{{cite web |url= https://marketingclient.lesechos.fr/ils-lont-fait/gagner-temps-chatbot-bancaire/|title=GAGNER DU TEMPS AVEC LE CHATBOT BANCAIRE POUR GAGNER EN INTELLIGENCE AVEC LES CONSEILLERS|website=Marketing Client|accessdate=April 1, 2019}}</ref>
+
+The advantages of using chatbots for customer interactions in banking include cost reduction, financial advice, and 24/7 support.<ref name="FinancialBrain">{{cite web |url= https://thefinancialbrand.com/71251/chatbots-banking-trends-ai-cx//|title=Meet 11 of the Most Interesting Chatbots in Banking|website=The Financial Brain|accessdate=April 1, 2019}}</ref><ref name="BornBane">{{cite web |url=https://blog.bluelupin.com/chatbot-advantages-and-disadvantages/|title=CHATBOTS: BOON OR BANE?|website=bluelupin|accessdate=April 1, 2019}}</ref>
+
+===Healthcare===
+{{See also|Artificial intelligence in healthcare}}
+Chatbots are also appearing in the healthcare industry.<ref>{{Cite web|url=https://money.cnn.com/2016/10/11/technology/baidu-doctor-ai-melody/index.html|title=Baidu is bringing AI chatbots to healthcare|first=Selena|last=Larson|date=October 11, 2016|website=CNNMoney}}</ref><ref>{{Cite web|url=https://medium.com/@ISDDesign/5-advantages-of-chatbots-in-the-healthcare-industry-622dd9253384|title=5 advantages of chatbots in the healthcare industry|date=June 29, 2018|website=Medium}}</ref><ref>{{Cite web|url=https://www.aiin.healthcare/topics/robotics/ai-chatbots-have-future-healthcare-caveats|title=AI chatbots have a future in healthcare, with caveats|website=AI in Healthcare}}</ref> A study suggested that physicians in the United States believed that chatbots would be most beneficial for scheduling doctor appointments, locating health clinics, or providing medication information.<ref>{{Cite journal|title=Physicians' Perceptions of Chatbots in Health Care: Cross-Sectional Web-Based Survey|first1=Adam|last1=Palanica|first2=Peter|last2=Flaschner|first3=Anirudh|last3=Thommandram|first4=Michael|last4=Li|first5=Yan|last5=Fossat|date=January 3, 2019|journal=Journal of Medical Internet Research|volume=21|issue=4|pages=e12887|doi=10.2196/12887|pmid=30950796|pmc=6473203}}</ref>
+
+Certain patient groups are still reluctant to use chatbots. A mixed-methods study showed that people are still hesitant to use chatbots for their healthcare due to poor understanding of the technological complexity, the lack of empathy and concerns about cyber-security.<ref>{{Cite journal|title=Acceptability of artificial intelligence (AI)-led chatbot services in healthcare: A mixed-methods study|first1=Tom|last1=Nadarzynski|first2=Oliver|last2=Miles|first3=Aimee|last3=Cowie|first4=Damien|last4=Ridge|date=January 1, 2019|journal=Digital Health|volume=5|pages=2055207619871808|doi=10.1177/2055207619871808|pmid=31467682|pmc=6704417}}</ref> The analysis showed that while 6% had heard of a health chatbot and 3% had experience of using it, 67% perceived themselves as likely to use one within 12 months. The majority of participants would use a health chatbot for seeking general health information (78%), booking a medical appointment (78%) and looking for local health services (80%). However, a health chatbot was perceived as less suitable for seeking results of medical tests and seeking specialist advice such as sexual health. The analysis of attitudinal variables showed that most participants reported their preference for discussing their health with doctors (73%) and having access to reliable and accurate health information (93%). While 80% were curious about new technologies that could improve their health, 66% reported only seeking a doctor when experiencing a health problem and 65% thought that a chatbot was a good idea. Interestingly, 30% reported dislike about talking to computers, 41% felt it would be strange to discuss health matters with a chatbot and about half were unsure if they could trust the advice given by a chatbot. Therefore, perceived trustworthiness, individual attitudes towards bots and dislike for talking to computers are the main barriers to health chatbots.
+
+During the [[2019–20 coronavirus pandemic]], many chatbots were deployed to provide information to end users.<ref>{{Cite web|url=https://www.hse.ie/chatbot/covid/chatiframe.aspx|title=COVID 19 Chat Bot|website=Health Service Executive Ireland}}</ref><ref>{{Cite web|url=https://www.youtube.com/watch?v=Ad99svTl52w|title=COVID-19: Doctors, nurses can message a chatbot to get information quickly|website=CNA}}</ref><ref>{{Cite web|url=https://thechatbot.net/chatbots-covid19/|title=Chatbots Providing Key Facts During the Covid-19 Spread|website=The Chatbot}}</ref>
+
+===Politics===
+{{See also|Government by algorithm#AI Politicians}}
+
+In New Zealand, the chatbot SAM -short for [[Semantic analysis (machine learning)|Semantic Analysis Machine-]]<ref>{{Cite web|url=https://tuiainnovation.com/sam%2c-the-virtual-politician|title=Sam, the virtual politician|website=Tuia Innovation}}</ref> (made by Nick Gerritsen of Touchtech<ref>{{Cite web|url=https://www.wgtn.ac.nz/news/2017/12/meet-the-worlds-first-virtual-politician|title=Meet the world's first virtual politician|first=Victoria University of|last=Wellington|date=December 15, 2017|website=Victoria University of Wellington}}</ref>) has been developed. It is designed to share its political thoughts, for example on topics such as climate change, healthcare and education, etc. It talks to people through Facebook Messenger.<ref>{{Cite web|url=https://www.cnn.com/2017/11/23/tech/first-virtual-politician-trnd/index.html|title=This virtual politician wants to run for office|first=Meg|last=Wagner|website=CNN}}</ref><ref>{{Cite web|url=https://www.engadget.com/2017/11/25/talk-with-the-first-ever-robot-politician-on-facebook-messenger/|title=Talk with the first-ever robot politician on Facebook Messenger|website=Engadget}}</ref><ref>{{Cite web|url=https://medium.com/politics-ai/ai-politicians-a-revolution-in-politics-11a7e4ce90b0|title=AI-Politicians: A Revolution In Politics|first=Abishur|last=Prakash|date=August 8, 2018|website=Medium}}</ref><ref>[https://www.politiciansam.nz SAM website]</ref>
+
+===Toys===
+Chatbots have also been incorporated into devices not primarily meant for computing, such as toys.<ref name="virtualagentchat">{{Cite web|url=https://virtualagentchat.com/2015/02/23/conversational-toys-the-latest-trend-in-speech-technology/|title=Conversational Toys – The Latest Trend in Speech Technology|last=Amy|date=2015-02-23|website=Virtual Agent Chat|access-date=2016-08-11}}</ref>
+
+''Hello [[Barbie]]'' is an Internet-connected version of the doll that uses a chatbot provided by the company ToyTalk,<ref>{{cite web|url=http://www.fastcompany.com/3042430/most-creative-people/using-toytalk-technology-new-hello-barbie-will-have-real-conversations-|title=USING TOYTALK TECHNOLOGY, NEW HELLO BARBIE WILL HAVE REAL CONVERSATIONS WITH KIDS|date=|website=Fast Company|publisher=|access-date=|last1=NAGY|first1=EVIE|accessdate=18 March 2015}}</ref> which previously used the chatbot for a range of smartphone-based characters for children.<ref>{{Triangulation|179|Oren Jacob, the co-founder and CEO of ToyTalk}}</ref> These characters' behaviors are constrained by a set of rules that in effect emulate a particular character and produce a storyline.<ref>{{cite web|url=http://www.google.com/patents/US20140032471|title=Artificial intelligence script tool|publisher=}}</ref>
+
+The [[My Friend Cayla]] doll was marketed as a line of {{convert|18|in|cm|adj=on}} dolls which uses [[speech recognition]] technology in conjunction with an [[Android (operating system)|Android]] or [[iOS]] mobile app to recognize the child's speech and have a conversation. It, like the Hello Barbie doll, attracted controversy due to vulnerabilities with the doll's [[Bluetooth]] stack and its use of data collected from the child's speech.
+
+IBM's [[Watson (computer)|Watson computer]] has been used as the basis for chatbot-based educational toys for companies such as ''CogniToys''<ref name="virtualagentchat"/> intended to interact with children for educational purposes.<ref>{{cite web|last1=Takahashi|first1=Dean|title=Elemental's smart connected toy taps IBM's Watson supercomputer for its brains|url=https://venturebeat.com/2015/02/23/elementals-smart-connected-toy-cognitoys-taps-ibms-watson-supercomputer-for-its-brains/|website=Venture Beat|accessdate=15 May 2015|ref=CogniToys}}</ref>
+
+==Malicious use==
+Malicious chatbots are frequently used to fill [[chat rooms]] with spam and advertisements, by mimicking human behavior and conversations or to entice people into revealing personal information, such as bank account numbers. They are commonly found on [[Yahoo! Messenger]], [[Windows Live Messenger]], [[AOL Instant Messenger]] and other [[instant messaging]] protocols. There has also been a published report of a chatbot used in a fake personal ad on a dating service's website.<ref>
+{{cite web
+| url= http://drrobertepstein.com/downloads/FROM_RUSSIA_WITH_LOVE-Epstein-Sci_Am_Mind-Oct-Nov2007.pdf
+| title=From Russia With Love| accessdate=2007-12-09
+}}
+Psychologist and ''Scientific American: Mind'' contributing editor [[Robert Epstein]] reports how he was initially fooled by a chatterbot posing as an attractive girl in a [[personal ad]] he answered on a dating website. In the ad, the girl portrayed herself as being in Southern California and then soon revealed, in poor English, that she was actually in Russia. He became suspicious after a couple of months of email exchanges, sent her an email test of gibberish, and she still replied in general terms. The dating website is not named. ''Scientific American: Mind'', October–November 2007, page 16–17, "From Russia With Love: How I got fooled (and somewhat humiliated) by a computer". Also available online.</ref>
+
+[[Tay (bot)|Tay]], an AI chatbot that learns from previous interaction, caused major controversy due to it being targeted by internet trolls on Twitter. The bot was exploited, and after 16 hours began to send extremely offensive Tweets to users. This suggests that although the bot learnt effectively from experience, adequate protection was not put in place to prevent misuse.<ref>{{cite book |last1=Bird |first1=Jordan J. |last2=Ekart |first2=Aniko |last3=Faria |first3=Diego R. |title=Advances in Computational Intelligence Systems |date=June 2018 |publisher=Springer |location=Nottingham, UK |isbn=978-3-319-97982-3 |pages=179–190 |edition=1st |url=https://www.springer.com/in/book/9783319979816 |accessdate=3 December 2018 |ref=birdchatbot}}</ref>
+
+If a text-sending [[algorithm]] can pass itself off as a human instead of a chatbot, its message would be more credible. Therefore, human-seeming chatbots with well-crafted online identities could start scattering fake news that seem plausible, for instance making false claims during a presidential election. With enough chatbots, it might be even possible to achieve artificial [[social proof]].<ref>{{cite web
+| url= https://www.sciencenews.org/article/twitter-bots-fake-news-2016-election
+| title=Fake News | accessdate=2018-11-20
+}}</ref><ref>{{cite web
+| url= https://medium.com/@lenepp/five-potential-malicious-uses-for-chatbots-a15f4955fba7
+| title=Malicious uses | accessdate=2016-05-11
+}}</ref>
+
+==Limitations of Chatbots==
+The creation and implementation of chatbots is still a developing area, heavily related to [[artificial intelligence]] and [[machine learning]], so the provided solutions, while possessing obvious advantages, have some important limitations in terms of functionalities and use cases. However this is changing over time.
+
+The most common ones are listed below:<ref name="Meet11">{{cite web
+| url=https://thefinancialbrand.com/71251/chatbots-banking-trends-ai-cx/
+| title=Meet 11 of the Most Interesting Chatbots in Banking| accessdate=2019-04-01
+}}</ref>
+
+*As the database, used for output generation, is fixed and limited, chatbots can fail while dealing with an unsaved query.<ref name="BornBane"/>
+*A chatbot's efficiency highly depends on language processing and is limited because of irregularities, such as accents and mistakes that can create an important barrier for international and multi-cultural organisations<ref>{{cite web
+| url=https://blog.aimultiple.com/why-chatbots-fail/
+| title=Why chatbots fail (and why natural languages are hard)| accessdate=2019-04-01
+}}</ref>
+*Chatbots are unable to deal with multiple questions at the same time and so conversation opportunities are limited.<ref name="Meet11" />
+*Chatbots require a large amount of conversational data to train.
+*As it happens usually with technology-led changes in existing services, some consumers, more often than not from the old generation, are uncomfortable with chatbots due to their limited understanding, making it obvious that their requests are being dealt with by machines.<ref name="Meet11" />
+
+==Chatbots and jobs==
+Chatbots are increasingly present in businesses and often are used to automate tasks that do not require skill-based talents. With customer service taking place via messaging apps as well as phone calls, there are growing numbers of use-cases where chatbot deployment gives organisations a clear return on investment. Call centre workers may be particularly at risk from AI-driven chatbots.<ref>{{cite web
+| url=https://www.bbc.com/news/business-45272835/
+| title=How talking machines are taking call centre jobs| accessdate=2019-04-01
+}}</ref>
+
+A study by [[Forrester Research|Forrester]] (June 2017) predicts that 25% of today's jobs will most likely be impacted by AI technologies by 2019.<ref>{{cite web
+| url=https://venturebeat.com/2017/06/18/how-chatbots-are-killing-jobs-and-creating-new-ones/
+| title=How chatbots are killing jobs (and creating new ones)| accessdate=2019-04-01
+| date=June 2017
+}}</ref>
+
+==See also==
+*[[Applications of artificial intelligence]]
+*[[Eugene Goostman]]
+*[[Interactive online characters]]
+*[[Internet bot]]
+*[[Social bot]]
+*[[Software bot]]
+*[[Twitterbot]]
+*[[List of chatterbots]]
+
+==References==
+{{reflist|30em}}
+
+===Further reading===
+<!-- alphabetical order -->
+*{{Citation | author=Computer History Museum | title=Exhibits | chapter=Internet History—1970's | year=2006 | publisher=[[Computer History Museum]] | accessdate=2008-03-05 | chapter-url=http://www.computerhistory.org/internet_history/internet_history_70s.shtml | url-status=dead | archiveurl=https://web.archive.org/web/20080221093646/http://www.computerhistory.org/internet_history/internet_history_70s.shtml | archivedate=2008-02-21 }}
+*{{Citation
+ | last=Güzeldere | first=Güven | title=Constructions of the Mind
+ | date=1995-07-24
+ | url=http://www.stanford.edu/group/SHR/4-2/text/dialogues.html
+ | last2=Franchi | first2=Stefano |author-link=<!--Güven Güzeldere-->
+ | author2-link=<!--same-->
+ | series=SEHR
+ | journal=Stanford Humanities Review | volume=4 | issue=2 | publisher=[[Stanford University]] | accessdate=2008-03-05
+}}
+*{{Citation
+ | url=http://www.aaai.org/Library/AAAI/aaai94contents.php
+ | contribution=ChatterBots, TinyMuds, and the Turing Test: Entering the Loebner Prize Competition
+ | last=Mauldin | first=Michael | author-link=<!--same-->
+ | title=Proceedings of the Eleventh National Conference on Artificial Intelligence
+ | year=1994 | publisher=[[AAAI Press]] | accessdate=2008-03-05
+}} ([http://www.aaai.org/Library/AAAI/1994/aaai94-003.php abstract])
+*{{Citation
+ | url=http://tools.ietf.org/html/rfc439
+ | title=RFC 439, PARRY Encounters the DOCTOR
+ | author=Network Working Group
+ | work=[[Internet Engineering Task Force]] | year=1973
+ | publisher=[[Internet Society]] | accessdate=2008-03-05
+}}
+*{{Citation
+ |url          = http://www.nettime.org/Lists-Archives/nettime-l-9707/msg00059.html
+ |title        = <nettime> Important Documents from the Early Internet (1972)
+ |last         = Sondheim
+ |first        = Alan J
+ |year         = 1997
+ |publisher    = nettime.org
+ |accessdate   = 2008-03-05
+ |archive-url  = https://web.archive.org/web/20080613072047/http://www.nettime.org/Lists-Archives/nettime-l-9707/msg00059.html#
+ |archive-date = 2008-06-13
+ |url-status     = dead
+}}
+*{{Citation
+ | last=Searle| first=John | author-link=John Searle | year=1980
+ | url = http://members.aol.com/NeoNoetics/MindsBrainsPrograms.html
+ | title = Minds, Brains and Programs
+ | journal = Behavioral and Brain Sciences | volume = 3| issue = 3| pages= 417–457
+ | doi=10.1017/S0140525X00005756
+}}
+*{{Cite book|title=Designing bots: Creating conversational experiences|last=Shevat|first=Amir|publisher=O'Reilly Media|year=2017|isbn=9781491974827|edition=First|location=Sebastopol, CA|pages=|oclc=962125282}}
+*{{Citation
+ | last = Turing | first = Alan | author-link=Alan Turing | year=1950
+ | title = Computing Machinery and Intelligence
+ | journal = Mind | volume = 59 | issue = 236 | pages = 433–60 | doi=10.1093/mind/lix.236.433
+}}
+*{{Citation
+ | last = Weizenbaum | first = Joseph | author-link = Joseph Weizenbaum | title = ELIZA—A Computer Program For the Study of Natural Language Communication Between Man And Machine
+ | journal = [[Communications of the ACM]] | volume = 9| issue = 1 |date = January 1966| pages = 36–45 | doi = 10.1145/365153.365168
+}}
+
+{{Natural Language Processing}}
+{{Portal bar|Language}}
+
+[[Category:Chatbots| ]]
+[[Category:Instant messaging]]
+[[Category:Interactive narrative|*]]
+[[Category:Natural language parsing]]
